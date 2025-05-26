@@ -1,0 +1,351 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <style>
+        header{
+            position: fixed;
+            grid-template-columns: 20% 60% 20%;
+            box-shadow: 10px 10px 10px #f0ecec;
+            display: flex;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            box-sizing: content-box;
+            background-color: #fff;
+        }
+        .lends{
+            position: absolute;
+            width: 174px;
+            height: 36px;
+            left: 10px;
+            background-image: url(/WorkingExamples/assets/Group.png);
+        }
+        .docs{
+            position: absolute;
+            left: 1300px;
+        }
+        .bell{
+            position: absolute;
+            left: 1370px;
+        }
+        .contact a{
+            color: rgb(5, 6, 82);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        header .search{
+            position: absolute;
+            left: 400px;
+            display: flex;
+            border: 1px solid lightblue;
+            border-radius: 8px;
+        }
+        header input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            background: transparent;
+        }
+        header .search-icon{
+            background-color: lightblue;
+            border: 1px;
+        }
+        header .contact-face{
+            position: absolute;
+            left: 1420px;
+            background-image: url(/WorkingExamples/image/user-avatar.png);
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border: 1px solid lightgoldenrodyellow;
+            border-radius: 18px;
+        }
+        header .contact{
+            position: absolute;
+            left: 1500px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        aside{
+            border: 1px solid lightblue;
+            width: 350px;
+            height: 1200PX;
+            border: none;
+            box-shadow: 2px 0px #e0dee6;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(33, 64, 125, 0.6);
+            font-size: 16px;
+            font-weight: 400;
+        }
+        aside .switch h2{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+        aside .switch h2 a{
+            text-decoration: none;
+            color: rgba(33, 64, 125, 0.6)
+        }
+        aside .switch p{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+        }
+        aside .switch p a{
+            text-decoration: none;
+            color: rgba(33, 64, 125, 0.6)
+        }
+        .btu a{
+            position: absolute;
+            width: 152px;
+            height: 30px;
+            top: 160px;
+            left: 443px;
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+        .ud{
+            position: absolute;
+            width: 143px;
+            height: 28px;
+            top: 216px;
+            left: 443px;
+            text-decoration: none;
+            color: #213F7D;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0px;
+        }
+        .blacklist a{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            width: 170px;
+            height: 40px;
+            top: 210px;
+            left: 1120px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 12px;
+            font-size: large;
+            border-radius: 8px;
+            color: #E4033B;
+            text-decoration: none;
+            border-width: 1px;
+            border: 1px solid #E4033B
+        }
+        .activate a{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            width: 170px;
+            height: 40px;
+            top: 210px;
+            left: 1320px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 12px;
+            font-size: large;
+            border-radius: 8px;
+            color: #39CDCC;
+            text-decoration: none;
+            border-width: 1px;
+            border: 1px solid #39cdcc
+        }
+        .dashboard{
+            position: absolute;
+            width: 1037px;
+            height: 210px;
+            top: 290px;
+            left: 443px;
+            border: 3px solid #f8f5f5;
+        }
+        .dashboard ul{
+            position: relative;
+            top: 170px;
+            display: grid;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .dashboard ul a{
+            text-decoration: none;
+            color: rgb(78, 67, 67);
+        }
+        .dashboard .profile{
+            position: relative;
+            top: 10px;
+            color: #213F7D;
+            font-size: larger;
+            font-weight: 600;
+        }
+        .personal-info{
+            position: absolute;
+            width: 1037px;
+            height: 650px;
+            top: 530px;
+            left: 443px;
+            border: 3px solid #f8f5f5;
+            border-radius: 4px;
+        }
+        .personal-info h3{
+            position: relative;
+            left: 50px;
+            color:#213F7D;
+        }
+        .personal-info p{
+            position: relative;
+            left: 50px;
+            color: #2c11c4;
+        }
+        .personal-info .li1{
+            position: relative;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            color: #213F7D;
+        }
+        .personal-info .li2{
+            position: relative;
+            right: 60px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            color: #213F7D;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="lends"></div>
+        <div class="search">
+            <input type="text" placeholder="Search for anything">
+            <button class="search-icon">
+                <a href="#"><iconify-icon icon="mdi:search" style="font-size: 24px;"></iconify-icon></a></button>
+            <label for=""></label>
+        </div>
+        <div class="docs"><a href="">Docs</a></div>
+        <div class="bell"><a href="#"><iconify-icon icon="mdi:bell" style="font-size: 24px;"></iconify-icon></a></div>
+        <div class="contact-face"></div>
+        <div class="contact"><a href="">Ikay</a></div>
+    </header>
+    <aside>
+        <div class="switch">
+            <ul>
+                <br>
+                <h2><img src="/WorkingExamples/image/briefcase 1.png" alt=""><a href="">Switch Organization</a></h2>
+                <br>
+                <p class="dashboard-icon"><img src="/WorkingExamples/image/home 1.png" alt=""><a href="">Dashboard</a></p>
+                <br><div class="customers">CUSTOMERS</div>
+                <p><img src="/WorkingExamples/image/Users.png" alt=""><a href="">Users</a></p>
+                <p><img src="/WorkingExamples/image/users 1.png" alt=""><a href="">Guarantors</a></p>
+                <p><img src="/WorkingExamples/image/sack 1.png" alt=""><a href="">Loans</a></p>
+                <p><img src="/WorkingExamples/image/handshake-regular 1.png" alt=""><a href="">Decison Models</a></p>
+                <p><img src="/WorkingExamples/image/piggy-bank 1.png" alt=""><a href="">Savings</a></p>
+                <p><img src="/WorkingExamples/image/Group 104.png" alt=""><a href="">Loan Requests</a></p>
+                <p><img src="/WorkingExamples/image/user-check 1.png" alt=""><a href="">Whitelist</a></p>
+                <p><img src="/WorkingExamples/image/user-times 1.png" alt=""><a href="">Karma</a></p>
+                <br><div class="businesses">BUSINESSES</div>
+                <p><img src="/WorkingExamples/image/briefcase 1.png" alt=""><a href="">Organization</a></p>
+                <p><img src="/WorkingExamples/image/coins-solid 1.png" alt=""><a href="">Loan Products</a></p>
+                <p><img src="/WorkingExamples/image/np_bank.png" alt=""><a href="">Savings Products</a></p>
+                <p><img src="/WorkingExamples/image/coins-solid 1.png" alt=""><a href="">Fees and Charges</a></p>
+                <p><img src="/WorkingExamples/image/icon.png" alt=""><a href="">Transactions</a></p>
+                <p><img src="/WorkingExamples/image/galaxy 1.png" alt=""><a href="">Services</a></p>
+                <p><img src="/WorkingExamples/image/user-cog 1.png" alt=""><a href="">Service Account</a></p>
+                <p><img src="/WorkingExamples/image/scroll 1.png" alt=""><a href="">Settlements</a></p>
+                <p><img src="/WorkingExamples/image/chart-bar 2.png" alt=""><a href="">Reports</a></p>
+                <br><div class="setings">SETTINGS</div>
+                <p><img src="/WorkingExamples/image/sliders-h 1.png" alt=""><a href="">Preferences</a></p>
+                <p><img src="/WorkingExamples/image/badge-percent 1.png" alt=""><a href="">Fees and Pricing</a></p>
+                <p><img src="/WorkingExamples/image/clipboard-list 1.png" alt=""><a href="">Audit Logs</a></p>
+                <p><img src="/WorkingExamples/image/badge-percent 1.png" alt=""><a href="">Systems Messages</a></p>
+                <br>
+                <br>
+                <br>
+                <p>Logout</p>
+                v1.2.0
+            </ul>
+        </div>
+    </aside>
+    <div class="btu"><a href="">Back to Users</a></div>
+    <div class="ud">User Details</div>
+    <div class="blacklist"><a href="">BLACKLIST USER</a></div>
+    <div class="activate"><a href="">ACTIVATE USER</a></div>
+    <div class="dashboard">
+        <ul>
+            <li><a href="">General Details</a></li>
+            <li><a href="">Loans</a></li>
+            <li><a href="">Documents</a></li>
+            <li><a href="">Bank Details</a></li>
+            <li><a href="">Savings</a></li>
+            <li><a href="">App and System</a></li>
+        </ul>
+        <ul class="profile">
+            <li>Onah Ikechukwu
+                <br>O.I.C</li>
+            <li>User's Tier</li>
+            <li>$500,000.45
+                <br>12348393/Providus Bank
+            </li>
+        </ul>
+    </div>
+    <div class="personal-info">
+        <h3>Personal Information</h3>
+        <ul class="li1">
+            <li>FULL NAME <br>Onah Ikechukwu</li>
+            <li>PHONE NUMBER <br>08130448831</li>
+            <li>EMAIL ADDRESS <br>onahike@gmai.com</li>
+            <li>BVN <br>08130448831</li>
+            <li>GENDER <br>MALE</li>
+        </ul>
+        <ul class="li2">
+            <li>MARITAL STATUS <br>Single asf</li>
+            <li>CHILDREN <br>None</li>
+            <li>TYPE OF RESIDENCE <br>Parent's Apartment</li>
+        </ul>
+        <h3>Education and Employment</h3>
+        <ul class="li1">
+            <li>EDUCATION LEVEL<br>B.Sc</li>
+            <li>EMPLOYMENT STATUS<br>Self Employed</li>
+            <li>EMPLOYMENT SECTOR<br>FinTech</li>
+            <li>DURATION OF EMPLOYMENT<br>NIL</li>
+        </ul>
+        <ul class="li2">
+            <li>OFFICE EMAIL<br>onahike@gmail.com</li>
+            <li>MONTHLY INCOME<br>$100,000-$500,000</li>
+            <li>LOAN REPAYMENT<br>$1000</li>
+        </ul>
+        <h3>Socials</h3>
+        <ul class="li2">
+            <li>TWITTER<br>im__just__human</li>
+            <li>SNAPCHAT<br>im-justhuman</li>
+            <li>INSTAGRAM<br>im--just--human</li>
+        </ul>
+        <h3>Guarantor</h3>
+        <ul class="li1">
+            <li>FULL NAME<br>Onah Chisom</li>
+            <li>PHONE NUMBER<br>091234567</li>
+            <li>EMAIL ADDRESS<br>onahchisom@gmail.com</li>
+            <li>RELATIONSHIP<br>SISTER</li>
+        </ul>
+        <br>
+        <ul class="li1">
+            <li>FULL NAME<br>Onah Henry</li>
+            <li>PHONE NUMBER<br>092093087</li>
+            <li>EMAIL ADDRESS<br>onahhenry@gmail.com</li>
+            <li>RELATIONSHIP<br>BROTHER</li>
+        </ul>
+    </div>
+</body>
+</html>
