@@ -73,10 +73,11 @@
             align-content: center;
         }
         aside{
-            border: 1px solid lightblue;
+            border-right: 1px solid #e0dee6;
+            border-bottom: 1px solid #e0dee6;
+            border-top: 1px solid #e0dee6;
             width: 350px;
-            height: 1200PX;
-            border: none;
+            height: 1500px;
             box-shadow: 2px 0px #e0dee6;
             font-family: Arial, Helvetica, sans-serif;
             color: rgba(33, 64, 125, 0.6);
@@ -191,36 +192,51 @@
         .personal-info{
             position: absolute;
             width: 1037px;
-            height: 650px;
+            height: 1000px;
             top: 530px;
             left: 443px;
             border: 3px solid #f8f5f5;
             border-radius: 4px;
+        }
+        table{
+            position: absolute;
+            top: 5px;
+            width: 100%;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom: 3px solid #f8f5f5;
+            color: #213F7D;
+        }
+        table tr td{
+            text-align: center;
         }
         .personal-info h3{
             position: relative;
             left: 50px;
             color:#213F7D;
         }
-        .personal-info p{
-            position: relative;
-            left: 50px;
-            color: #2c11c4;
+        .E-E{
+            top: 250px;
         }
-        .personal-info .li1{
-            position: relative;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            color: #213F7D;
+        .Ed-Em{
+            position: absolute;
+            top: 300px;
         }
-        .personal-info .li2{
-            position: relative;
-            right: 60px;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            color: #213F7D;
+        .sc{
+            top: 480px;
+        }
+        .socials{
+            position: absolute;
+            top: 560px;
+        }
+        .guarantor{
+            position: absolute;
+            top: 720px;
+        }
+        .Gt{
+            position: absolute;
+            top: 600px;
         }
     </style>
 </head>
@@ -300,51 +316,60 @@
         </ul>
     </div>
     <div class="personal-info">
+        <table cellspacing="60">
         <h3>Personal Information</h3>
-        <ul class="li1">
-            <li>FULL NAME <br>Onah Ikechukwu</li>
-            <li>PHONE NUMBER <br>08130448831</li>
-            <li>EMAIL ADDRESS <br>onahike@gmai.com</li>
-            <li>BVN <br>08130448831</li>
-            <li>GENDER <br>MALE</li>
-        </ul>
-        <ul class="li2">
-            <li>MARITAL STATUS <br>Single asf</li>
-            <li>CHILDREN <br>None</li>
-            <li>TYPE OF RESIDENCE <br>Parent's Apartment</li>
-        </ul>
-        <h3>Education and Employment</h3>
-        <ul class="li1">
-            <li>EDUCATION LEVEL<br>B.Sc</li>
-            <li>EMPLOYMENT STATUS<br>Self Employed</li>
-            <li>EMPLOYMENT SECTOR<br>FinTech</li>
-            <li>DURATION OF EMPLOYMENT<br>NIL</li>
-        </ul>
-        <ul class="li2">
-            <li>OFFICE EMAIL<br>onahike@gmail.com</li>
-            <li>MONTHLY INCOME<br>$100,000-$500,000</li>
-            <li>LOAN REPAYMENT<br>$1000</li>
-        </ul>
-        <h3>Socials</h3>
-        <ul class="li2">
-            <li>TWITTER<br>im__just__human</li>
-            <li>SNAPCHAT<br>im-justhuman</li>
-            <li>INSTAGRAM<br>im--just--human</li>
-        </ul>
-        <h3>Guarantor</h3>
-        <ul class="li1">
-            <li>FULL NAME<br>Onah Chisom</li>
-            <li>PHONE NUMBER<br>091234567</li>
-            <li>EMAIL ADDRESS<br>onahchisom@gmail.com</li>
-            <li>RELATIONSHIP<br>SISTER</li>
-        </ul>
+            <tr>
+                <td>FULL NAME <br>Onah Ikechukwu</td>
+                <td>PHONE NUMBER <br>08130448831</td>
+                <td>BVN <br>08130448831</td>
+                <td>GENDER <br>MALE</td>
+            </tr>
+            <tr>
+                <td>MARITAL STATUS <br>Single asf</td>
+                <td>CHILDREN <br>None</td>
+                <td>TYPE OF RESIDENCE <br>Parent's Apartment</td>
+                <td>CURRENT RESIDENCE <br>712 ROAD</td>
+            </tr>
+            <h3 class="E-E">Education and Employment</h3>
+        </table>
+        <table class="Ed-Em" cellspacing="60">
+            <tr>
+                <td>EDUCATION LEVEL<br>B.Sc</td>
+                <td>EMPLOYMENT STATUS<br>Self Employed</td>
+                <td>EMPLOYMENT SECTOR<br>FinTech</td>
+                <td>DURATION OF EMPLOYMENT<br>NIL</td>
+             </tr>
+            <tr>
+                <td>OFFICE EMAIL<br>onahike@gmail.com</td>
+                <td>MONTHLY INCOME<br>$100,000-$500,000</td>
+                <td>LOAN REPAYMENT<br>$1000</td>
+                <td>LOAN OUTSTANDING<br>$00.00</td>
+            </tr>
+        </table>
+        <table class="Socials" cellspacing="60">
+            <h3 class="Sc">Socials</h3>
+        <tr>
+            <td>TWITTER<br>im__just__human</td>
+            <td>SNAPCHAT<br>im-justhuman</td>
+            <td>INSTAGRAM<br>im--just--human</td>
+            <td>TELEGRAM<br>im--just--human</td>
+        </tr>
+        </table>
+        <table class="guarantor" cellspacing="60">
+            <h3 class="Gt">Guarantor</h3>
+        <tr>
+            <td>FULL NAME<br>Onah Chisom</td>
+            <td>PHONE NUMBER<br>091234567</td>
+            <td>EMAIL ADDRESS<br>onahchisom@gmail.com</td>
+            <td>RELATIONSHIP<br>SISTER</td>
+        </tr>
         <br>
-        <ul class="li1">
-            <li>FULL NAME<br>Onah Henry</li>
-            <li>PHONE NUMBER<br>092093087</li>
-            <li>EMAIL ADDRESS<br>onahhenry@gmail.com</li>
-            <li>RELATIONSHIP<br>BROTHER</li>
-        </ul>
+        <tr>
+            <td>FULL NAME<br>Onah Henry</td>
+            <td>PHONE NUMBER<br>092093087</td>
+            <td>EMAIL ADDRESS<br>onahhenry@gmail.com</td>
+            <td>RELATIONSHIP<br>BROTHER</td>
+        </tr>
+        </table>
     </div>
 </body>
-</html>
